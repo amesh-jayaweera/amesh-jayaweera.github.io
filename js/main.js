@@ -92,7 +92,9 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
+/*------------------------------------*/
 
+	//end---------------------------------
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
 			e.preventDefault();
@@ -204,6 +206,23 @@ jQuery(document).ready(function($) {
 		$(".js-sticky-header").sticky({topSpacing:0});
 	};
 	siteSticky();
+
+
+
+	//experience=activities
+	// Initiate the wowjs
+	new WOW().init();
+
+	var loader = function () {
+		setTimeout(function () {
+			if ($('#loader').length > 0) {
+				$('#loader').removeClass('show');
+			}
+		}, 1);
+	};
+	loader();
+
+	/*------------------------------*/
 
 	// navigation
   var OnePageNavigation = function() {
